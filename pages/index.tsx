@@ -1,7 +1,9 @@
+import styles from './index.module.scss';
+
 export default function IndexPage() {
   return(
-    <div>
+    <main className={styles.main}>
       Hello world
-    </div>
+    </main>
   );
 }

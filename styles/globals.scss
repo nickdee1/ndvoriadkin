@@ -1,5 +1,20 @@
+@use "sass:map";
+@import "variables.scss";
+
+@font-face {
+  font-family: "Hack";
+  src: local("Hack"), url(assets/fonts/Hack-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  font-family: "Hack", sans-serif;
+  color: map.get($colors, "green")
+}
+
+a {
+  color: map.get($colors, "yellow");
 }

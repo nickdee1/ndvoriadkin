@@ -3,9 +3,7 @@
 
 .main {
   display: flex;
-  background-color: mediumslateblue;
-
-  @media screen and (min-width: map.get($breakpoints, "full")) {
-    width: map.get($breakpoints, "full");
-  }
+  background-color: map.get($colors, "black");
+  height: 100vh;
+  width: 100vw;
 }

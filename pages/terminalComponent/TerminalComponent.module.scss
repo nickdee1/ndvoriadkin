@@ -14,4 +14,13 @@
 
 .mainSection {
   margin-top: 30px;
+
+  .greetings {
+    margin-bottom: 50px;
+  }
+
+  .loveItem {
+    color: map.get($colors, "red");
+    text-decoration: underline;
+  }
 }

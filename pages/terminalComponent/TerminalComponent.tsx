@@ -1,16 +1,7 @@
 import styles from './TerminalComponent.module.scss';
+import {handWaveAscii, welcomeAscii} from './ascii';
 
 const TerminalComponent = () => {
-
-  const ascii = `
-                   ___                                               
-                  /\\_ \\                                              
- __  __  __     __\\//\\ \\     ___    ___     ___ ___      __          
-/\\ \\/\\ \\/\\ \\  /'__\`\\\\ \\ \\   /'___\\ / __\`\\ /' __\` __\`\\  /'__\`\\        
-\\ \\ \\_/ \\_/ \\/\\  __/ \\_\\ \\_/\\ \\__//\\ \\_\\ \\/\\ \\/\\ \\/\\ \\/\\  __/        
- \\ \\___x___/'\\ \\____\\/\\____\\ \\____\\ \\____/\\ \\_\\ \\_\\ \\_\\ \\____\\       
-  \\/__//__/   \\/____/\\/____/\\/____/\\/___/  \\/_/\\/_/\\/_/\\/____/                                                                          
-  `
 
   const loveItems = [
     {name: "js/ts", id: 0},
@@ -23,7 +14,8 @@ const TerminalComponent = () => {
     <div className={styles.terminal}>
       <pre>
         <code>
-          {ascii}
+          <div className={styles.welcomeAscii}>{welcomeAscii}</div>
+          <div className={styles.handWaveAscii}>{handWaveAscii}</div>
         </code>
       </pre>
       <div className={styles.mainSection}>
